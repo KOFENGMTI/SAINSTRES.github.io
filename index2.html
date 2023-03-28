@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINSTRES</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+*{
+	margin:0;
+	padding:0;
+}
+body{
+margin: 0;
+padding: 0;
+}
+
+nav{
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.nav-ul .nav-img-p{
+	width: 250px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: 'Lily Script One', cursive;
+	font-family: 'Staatliches', cursive;
+}
+
+.nav-ul .nav-imgig-p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-ul .nav-img-p img{
+	width: 70px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 4px;
+}
+
+.nav-ul .nav-imgig-p img{
+	width: 60px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 4px;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-ul .nav-imgig-p p{
+	font-family: 'Lily Script One', cursive;
+	font-family: 'Staatliches', cursive;
+	color: white;
+	font-weight: 20px;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+.nav-ul .nav-img-p p{
+	font-family: 'Lily Script One', cursive;
+	font-family: 'Staatliches', cursive;
+	color: white;
+	font-weight: 20px;
+	font-size: 30px;
+}
+
+nav .nav-ul{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	background: rgba( 239, 255, 43, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17px );
+-webkit-backdrop-filter: blur( 17px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.nav-ul ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.nav-ul ul li {
+	background: rgba( 239, 255, 43, 0.9 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17px );
+-webkit-backdrop-filter: blur( 17px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+	margin-right: 30px;
+	list-style: none;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	border-radius: 30px;
+	border: 2px solid rgb(255, 255, 255);
+	transition: 0.5s;
+}
+
+.nav-ul ul li:hover{
+	background: rgba( 253, 255, 246, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+transition: 0.5s;
+margin-right: 30px;
+	list-style: none;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	border-radius: 30px;
+	border: 2px solid rgb(98, 99, 99);
+}
+
+.nav-ul ul li a{
+	font-family:impact;
+	text-decoration: none;
+	color: blak;
+}
+
+.nav-ul ul li a:hover{
+	color: white;
+}
+
+ .back-video{
+position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+ }
+
+    </style>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/My Video1.mp4" type="video/mp4">
+    </video>
+    </body>
+     <nav>
+        <div class="nav-ul">
+            <div class="nav-img-p">
+                <img src="images/ST-class.jpeg" alt="">
+                <p>sainstres</p>
+            </div>
+            <div class="nav-imgig-p">
+                <img src="images/ig3.png">
+                <p>@sainstres</p>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT DEV</a></li>
+            </ul>
+        </div>
+     </nav>
+
+	 <section class="home">
+		<div class="container">
+		   <div class="row">
+			   <div class="home-text">
+					<h1>XII IPA 2</h1>
+					<p class="animate-text">
+					   <span> Selamat Datang</span>
+					   <span>Di Website </span>
+					   <span>sejuta kenangan XII IPA 2</span>
+					   <span>SAINSTRES</span>
+					   <span>.</span> 
+					</p>
+					<a href="index.html" target="_self" class="a-bookmemoris">BOOK OF MEMORIES </a>
+			   </div>
+		   </div>
+		</div>
+	</section>
+   
+   
+   
+   <script>
+			const txts=document.querySelector(".animate-text").children,
+				  txtsLen=txts.length;
+			  let index=0;
+			 const textInTimer=3000,
+				   textOutTimer=2800;
+   
+			function animateText() {
+			   for(let i=0; i<txtsLen; i++){
+				 txts[i].classList.remove("text-in","text-out");  
+			   }
+			   txts[index].classList.add("text-in");
+   
+			   setTimeout(function(){
+				   txts[index].classList.add("text-out");              
+			   },textOutTimer)
+   
+			   setTimeout(function(){
+   
+				 if(index == txtsLen-1){
+					 index=0;
+				   }
+				  else{
+					  index++;
+					}
+				   animateText();
+			   },textInTimer); 
+			}
+			
+			window.onload=animateText;
+	  
+   </script>
+   
+
+</body>
+
+</html>
