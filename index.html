@@ -59,7 +59,7 @@ nav{
 .nav-ul .nav-imgig-p p{
 	font-family: 'Lily Script One', cursive;
 	font-family: 'Staatliches', cursive;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: 20px;
 	font-size: 30px;
 	margin: 0;
@@ -68,7 +68,7 @@ nav{
 .nav-ul .nav-img-p p{
 	font-family: 'Lily Script One', cursive;
 	font-family: 'Staatliches', cursive;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: 20px;
 	font-size: 30px;
 }
@@ -79,11 +79,7 @@ nav .nav-ul{
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	background: rgba( 239, 255, 43, 0.45 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 17px );
--webkit-backdrop-filter: blur( 17px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+	background-color: yellow;
 }
 
 .nav-ul ul{
@@ -93,11 +89,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .nav-ul ul li {
-	background: rgba( 239, 255, 43, 0.9 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 17px );
--webkit-backdrop-filter: blur( 17px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+	background-color: white;
 	margin-right: 30px;
 	list-style: none;
 	width: 100px;
@@ -111,11 +103,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .nav-ul ul li:hover{
-	background: rgba( 253, 255, 246, 0.55 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+background-color: white;
 transition: 0.5s;
 margin-right: 30px;
 	list-style: none;
@@ -125,7 +113,7 @@ margin-right: 30px;
 	justify-content: center;
 	height: 35px;
 	border-radius: 30px;
-	border: 2px solid rgb(98, 99, 99);
+	border: 2px solid rgb(149, 150, 150);
 }
 
 .nav-ul ul li a{
@@ -135,7 +123,7 @@ margin-right: 30px;
 }
 
 .nav-ul ul li a:hover{
-	color: white;
+	color: rgb(255, 251, 0);
 }
 
  .back-video{
@@ -144,15 +132,18 @@ position: fixed;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  opacity: none;
  }
 
     </style>
 </head>
 <body>
+	<audio autoplay>
+		<source src="audio/music1.mp3">
+	</audio>
     <video autoplay loop muted plays-inline class="back-video">
         <source src="images/My Video1.mp4" type="video/mp4">
     </video>
-    </body>
      <nav>
         <div class="nav-ul">
             <div class="nav-img-p">
