@@ -1,1 +1,1 @@
-project kali ini tidak akan saya lanjutin karena saya harus mempelajari dan mendalami bahasa pemograman lain agar project ini berjalan dengan sempurna dan aman dari orang yang tidak bertanggung jawab 
+project kali ini tidak akan saya lanjutin karena saya harus mempelajari dan mendalami bahasa pemograman lain agar project ini berjalan dengan sempurna dan aman dari orang yang tidak bertanggung jawab. tetapi teman teman bisa mengakses wek ini walaupun masih belum sempurna dalam hal tampilan dan responsivenya 
